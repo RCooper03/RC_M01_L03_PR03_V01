@@ -8,8 +8,9 @@ public class gameBehaviour : MonoBehaviour
 {
     public string labelText = "Collect all 4 items to proceed";
     public int maxItems = 4;
-
+    public int ammoCount = 0;
     public bool showWinScreen = false;
+    public int armourCount;
 
     private int itemsCollected = 0;
     public int Items
@@ -52,6 +53,10 @@ public class gameBehaviour : MonoBehaviour
         GUI.Box(new Rect(20, 20, 150, 25), "Player Health:" + playerHP);
 
         GUI.Box(new Rect(20, 50, 150, 25), "Items Collected: " + itemsCollected);
+
+        GUI.Box(new Rect(20, 80, 150, 25), "Ammo: " + ammoCount);
+
+        GUI.Box(new Rect(20, 110, 150, 25), "Armour: " + armourCount);
 
         GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height - 50, 300, 50), labelText);
 

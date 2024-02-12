@@ -23,6 +23,7 @@ public class armourBehaviour : MonoBehaviour
             Debug.Log("You picked up armour.");
 
             gameManager.Items += 1;
+            gameManager.armourCount += 25;
         }
     }
 

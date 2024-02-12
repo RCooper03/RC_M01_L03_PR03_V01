@@ -23,6 +23,7 @@ public class ammoBehaviour : MonoBehaviour
             Debug.Log("You picked up ammo.");
 
             gameManager.Items += 1;
+            gameManager.ammoCount += 8;
         }
     }
 
